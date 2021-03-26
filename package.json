@@ -1,7 +1,7 @@
 {
   "name": "kombi",
   "version": "0.0.1",
-  "description": "Typescript capabale simple object combination generator",
+  "description": "Typescript capabale simple object cartesian combination generator",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "browser": "dist/index.js",
@@ -16,10 +16,13 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/CorentinTh/kombi"
+    "url": "git+https://github.com/CorentinTh/kombi.git"
   },
   "keywords": [
     "object",
+    "cartesian",
+    "array",
+    "permutation",
     "combination",
     "mix",
     "blend",
@@ -29,17 +32,24 @@
   "author": "Corentin Th <corentin.thomasset74+npm@gmail.com> (https://github.com/CorentinTh)",
   "license": "MIT",
   "devDependencies": {
-    "@rollup/plugin-typescript": "^4.1.2",
-    "@types/jest": "^25.2.3",
-    "@typescript-eslint/eslint-plugin": "^2.34.0",
-    "@typescript-eslint/parser": "^2.34.0",
-    "eslint": "^6.8.0",
-    "jest": "^25.5.4",
-    "rollup": "^2.21.0",
-    "rollup-plugin-terser": "^7.0.0",
-    "rollup-plugin-typescript2": "^0.26.0",
-    "ts-jest": "^25.5.1",
-    "typescript": "^3.9.6"
+    "@rollup/plugin-typescript": "^8.2.0",
+    "@types/jest": "^26.0.22",
+    "@typescript-eslint/eslint-plugin": "^4.19.0",
+    "@typescript-eslint/parser": "^4.19.0",
+    "eslint": "^7.22.0",
+    "jest": "^26.6.3",
+    "rollup": "^2.42.4",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "ts-jest": "^26.5.4",
+    "typescript": "^4.2.3"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/CorentinTh/kombi/issues"
+  },
+  "homepage": "https://github.com/CorentinTh/kombi#readme",
+  "directories": {
+    "test": "test"
+  }
 }
