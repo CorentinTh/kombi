@@ -1,7 +1,7 @@
 {
   "name": "kombi",
   "version": "0.0.1",
-  "description": "Typescript capabale simple object cartesian combination generator",
+  "description": "Simple object and array cartesian combination generator (for node, typescript and the browser).",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "browser": "dist/index.js",
