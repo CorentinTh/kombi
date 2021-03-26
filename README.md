@@ -21,7 +21,7 @@
 Simple object and array cartesian combination generator (for node, typescript and the browser). Kombi will generate every combination between the sets of value given as parameters.
 
 ## Installation
-### Node JS
+### JS / Typescript / Node JS
 **Kombi** can be installed using yarn or npm.
 
 ```bash
