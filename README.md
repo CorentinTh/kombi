@@ -119,6 +119,7 @@ const result = kombi({
     c: 'foo'
 })
 ```
+* Create benchmark
 ## Contribute
 **Pull requests are welcome !** Feel free to contribute.
 
