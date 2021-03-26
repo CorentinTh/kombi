@@ -18,9 +18,107 @@
     
 </div>
 
+Simple object and array cartesian combination generator (for node, typescript and the browser). Kombi will generate every combination between the sets of value given as parameters.
 
+## Installation
+### Node JS
+**Kombi** can be installed using yarn or npm.
 
+```bash
+npm install kombi
+# or
+yarn add kombi
+```
 
+And import :
+
+```javascript
+// EMAScript import
+import {kombi} from 'kombi';
+
+// Or Common JS:
+const {kombi} = require('kombi');
+
+// and used...
+
+const obj = {
+  a: [1, 2, 3],
+  b: ['a', 'b']
+}
+
+const mergedObj = kombi(obj)
+
+console.log(mergedObj)
+
+/*
+[
+  {a: 1, b: 'a'},
+  {a: 1, b: 'b'},
+  {a: 2, b: 'a'},
+  {a: 2, b: 'b'},
+  {a: 3, b: 'a'},
+  {a: 3, b: 'b'},
+]
+*/
+```
+### Browser
+
+You can use the CDN:
+```html
+<script src="https://unpkg.com/kombi"></script>
+```
+And everything is globally accessible and **prefixed with `Kombi`**:
+```javascript
+const kombi = new Kombi.kombi(obj)
+```
+
+## Usage
+### Combinate object with array properties
+
+```javascript
+const result = kombi({
+    a: [1, 2, 3, 4],
+    b: ['a', 'b', 'c', 'd'],
+})
+
+/*
+result = [
+    {a: 1, b: 'a'}, {a: 1, b: 'b'}, {a: 1, b: 'c'}, {a: 1, b: 'd'},
+    {a: 2, b: 'a'}, {a: 2, b: 'b'}, {a: 2, b: 'c'}, {a: 2, b: 'd'},
+    {a: 3, b: 'a'}, {a: 3, b: 'b'}, {a: 3, b: 'c'}, {a: 3, b: 'd'},
+    {a: 4, b: 'a'}, {a: 4, b: 'b'}, {a: 4, b: 'c'}, {a: 4, b: 'd'}
+]
+*/
+```
+
+### Combinate array of arrays
+
+```javascript
+const result = kombi([
+    [1, 2, 3, 4],
+    ['a', 'b', 'c'],
+])
+
+/*
+result = [
+  [1, 'a'], [1, 'b'], [1, 'c'], 
+  [2, 'a'], [2, 'b'], [2, 'c'], 
+  [3, 'a'], [3, 'b'], [3, 'c'], 
+  [4, 'a'], [4, 'b'], [4, 'c']
+]
+*/
+```
+## Roadmap
+* Improve documentation
+* Add more unit test
+* Allow single parameters as input, like :
+```javascript
+const result = kombi({
+    a: [1, 2, 3, 4],
+    b: ['a', 'b', 'c', 'd'],
+    c: 'foo'
+})
+```
 ## Contribute
 **Pull requests are welcome !** Feel free to contribute.
 
